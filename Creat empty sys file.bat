@@ -15,12 +15,12 @@ echo ============================================
 echo Empty .SYS File Creator for System32\drivers
 echo ============================================
 
-:: Get filename from user input
+:: Get file name from user input
 :getFilename
 set "filename="
-set /p "filename=Please enter the filename (without .sys extension): "
+set /p "filename=Please enter the file name (without .sys extension): "
 if "%filename%"=="" (
-    echo Error: Filename cannot be empty!
+    echo Error: File name cannot be empty!
     goto getFilename
 )
 
@@ -61,7 +61,7 @@ if %errorlevel% equ 0 (
 ) else (
     echo Error: Failed to create file!
     echo Please check permissions and try again.
+    echo Script exit.
 )
-echo.
 
 pause

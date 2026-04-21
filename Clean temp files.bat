@@ -12,7 +12,7 @@ if %errorLevel% neq 0 (
 :: -----------------------------------
 
 echo ==============================
-echo Windows Temp File Cleanup Tool
+echo Windows Temp File Clean Tool
 echo ==============================
 echo.
 echo Cleaning Temporary Files...
